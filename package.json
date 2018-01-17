@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "A number converter for Chinese",
   "main": "./dist/index.js",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/inksmallfrog/inksmallfrog-chinese-number"
+	},
   "scripts": {
     "build": "webpack",
     "test": "mocha -r ts-node/register ./test/*.test.ts"
