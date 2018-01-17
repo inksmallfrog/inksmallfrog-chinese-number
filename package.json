@@ -1,6 +1,6 @@
 {
   "name": "inksmallfrog-chinese-number",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A number converter for Chinese",
   "main": "./stc/index.js",
   "repository": {
