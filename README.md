@@ -1,5 +1,7 @@
 # USAGE
+``` sh
 npm install --save inksmallfrog-chinese-number
+```
 
 ``` js
 import {numberToChinese, chineseToNumber} from 'inksmallfrog-chinese-number';
