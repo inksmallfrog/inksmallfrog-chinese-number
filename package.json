@@ -1,5 +1,5 @@
 {
-  "name": "frog-chinese-number",
+  "name": "inksmallfrog-chinese-number",
   "version": "1.0.0",
   "description": "A number converter for Chinese",
   "main": "./dist/index.js",
