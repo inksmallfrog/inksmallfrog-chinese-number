@@ -2,7 +2,7 @@
   "name": "inksmallfrog-chinese-number",
   "version": "1.0.3",
   "description": "A number converter for Chinese",
-  "main": "./dist/index.js",
+  "main": "./stc/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/inksmallfrog/inksmallfrog-chinese-number"
