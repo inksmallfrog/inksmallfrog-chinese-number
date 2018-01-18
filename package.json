@@ -2,14 +2,15 @@
   "name": "inksmallfrog-chinese-number",
   "version": "1.0.5",
   "description": "A number converter for Chinese",
-  "main": "./src/index.js",
+  "main": "./dist/index.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/inksmallfrog/inksmallfrog-chinese-number"
   },
   "scripts": {
     "build": "webpack",
-    "test": "mocha -r ts-node/register ./test/*.test.ts"
+    "test-src": "mocha -r ts-node/register ./test/src.test.ts",
+    "test-build": "mocha -r ts-node/register ./test/build.test.ts"
   },
   "keywords": [
     "numerals",
@@ -17,7 +18,10 @@
   ],
   "author": "inksmallfrog",
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies": {    
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "mocha": "^4.1.0",
     "ts-loader": "^3.2.0",

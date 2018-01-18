@@ -1,12 +1,16 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: {
+    "index": "./src",
+    "index.min": "./src",
+  },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'babel-loader!ts-loader',
         exclude: /node_modules/
       }
     ]
@@ -15,7 +19,15 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
+    library: 'chineseNumber',
+    libraryTarget: 'umd'
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      include: /\.min\.js$/,
+      minimize: true
+    })
+  ]
 };

@@ -108,5 +108,5 @@ export function numberToChinese(num: number, base: number){
     }
 
     //递归处理下一基础进位
-    return NumberToChinese(_n, base + 1) + res + chBasePosition[base];
+    return numberToChinese(_n, base + 1) + res + chBasePosition[base];
 }
